@@ -1,0 +1,25 @@
+<html>
+<body style="background-color: black">
+<h1 style="color: red">Specula Movie</h1>
+
+{% block content %}
+<h1 class="my-5">These are the notes:</h1>
+
+<div class="row row-cols3 g-2">
+    {% for note in mov %}
+    <div class="col">
+        <div class="p-3 border">
+            <a href="{% url MoviePost() %}" class="text-dark text-decoration-non">
+                <h3>{{ note.aatitle }}</h3>
+            </a>
+            {{ note.text|truncatechars:10}}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+</div>
+</body>
+</div>
+</html>

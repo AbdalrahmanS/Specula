@@ -1,0 +1,37 @@
+<html>
+<body style="background-color: black">
+<h1 style="color: blue; text-align: center; font-size:+140px"> Specula</h1>
+
+<img src="https://raw.githubusercontent.com/AbdalrahmanS/Specula/main/Logo.png"
+     style="width:500px;height:375px;display: block;margin-left: auto;margin-right: auto;">
+
+<h1 style="text-align: center">
+    <a href="{% url 'viewMovie' %}"
+       style="padding: 10px 20px; background-color:skyblue; color: midnightblue; text-align: center;  text-decoration: none;"
+       class="btn btn-primary my-5">Movies</a>
+    <a href="{% url 'viewTV' %}"
+       style="padding: 10px 15px; background-color:skyblue; color: midnightblue; text-align: center;  text-decoration: none;"
+       class="btn btn-primary my-5">TV</a>
+    <a href="{% url 'viewVideoGame' %}"
+       style="padding: 10px 15px; background-color:skyblue; color: midnightblue; text-align: center;  text-decoration: none;"
+       class="btn btn-primary my-5">VideoGame</a>
+</h1>
+
+<h1 style="text-align: center">
+    <a href="{% url 'newMoviePost' %}"
+       style="padding: 10px 15px; background-color:skyblue; color: midnightblue; text-align: center;  text-decoration: none;"
+       class="btn btn-primary my-5">Post about Movie</a>
+
+    <a href="{% url 'newTVPost' %}"
+       style="padding: 10px 15px; background-color:skyblue; color: midnightblue; text-align: center;  text-decoration: none;"
+       class="btn btn-primary my-5">Post about TV</a>
+
+    <a href="{% url 'newVideoGamePost' %}"
+       style="padding: 10px 15px; background-color:skyblue; color: midnightblue; text-align: center;  text-decoration: none;"
+       class="btn btn-primary my-5">Post about Video Game</a>
+
+</h1>
+
+</body>
+
+</html>
